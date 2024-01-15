@@ -1,0 +1,139 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+nav ul li{
+    list-style: none;
+}
+
+.influencer-container{
+    display: flex;
+    align-items: center;
+}
+.primary-btn{
+    color: white;
+    background-color: #E02C6D;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+.influencer-img{
+    border: 1px rebeccapurple solid;
+    background-color: red;
+    border-radius: 50%;
+}
+/* market logos css */
+.market-logos{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 28px;
+    margin-top: 50px;
+}
+
+.products-card{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3,0.5fr);
+}
+.products{
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    border-radius: 15px;
+}
+.products ul {
+    display: flex;
+    padding-left: 0px;
+    /* justify-content: flex-start; */
+    
+}
+.products ul li{
+  list-style: none;
+  color: gold;
+  text-align: left;
+}
+.products ul .score{
+    color:black;
+    margin-left: 5px;
+}
+.products-see-btn{
+    display: flex;
+    gap: 3px;
+    margin-top: 10px;
+    position: relative;
+    left: 1250px;
+    bottom: 0px;
+}
+.products-see-btn li{
+    list-style: none;
+}
+.products-see-btn a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+}
+/*feature product container  */
+.feature-productcontainer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* footer css */
+.all-footer{
+    color: white;
+    background-color: #0A0826;
+    text-align: center;
+    height: 240px;
+    /* display: grid;
+    align-items: center; */
+}
+.footer-heading{
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.footer-media{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.footer-media  li {
+    list-style: none;
+    
+}
+
+/* responsive area */
+@media screen and (max-width:576px) {
+    nav,nav ul {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .influencer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .influencer-img{
+        width: 100%;  
+    }
+    .influencer-img img{
+        width: 100%;
+    }
+    .market-logos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .products-card{
+        display: block;
+        margin-top: 10px;
+    }
+    .products-see-btn{
+        position: static;
+        justify-content: center;
+    }
+    .feature-productcontainer{
+        flex-direction: column;
+    }
+}
